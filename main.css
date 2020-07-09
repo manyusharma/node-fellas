@@ -1,17 +1,8 @@
-/*
-black #191716
-blue #3a86ff
-voilet #8338ec
-pink #ff006e
-mustrad #fb5607
-yellow #ffbe0b
-grey blue #264653
-*/
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;  /*allow us to include the padding and border in an elements total width and height */
+    
 }
 
 
@@ -23,22 +14,25 @@ body{
 
 /* nav */
 
-nav ul{
+a{
+    padding: 20px;
+    margin: 0px;
+}
+
+nav ul button {
+    border-top: 19px solid #3a86ff;
     list-style-type:none;
-    border-top: 6px solid #3a86ff;
-    background-color: #264653;
-}
-
-nav ul li a {
-    text-decoration: none;
-    display: block;
-    text-align: center;   
+    background-color: #1d3557;
+    text-decoration: none;   
     font-size: 20px;
-    padding:15px 25px;
     color:#3a86ff;
+    position: relative;
+  margin: 0 auto 0;
+  padding: 25px 15px;
+  
 }
 
-nav ul li a:hover{
+nav ul button:hover{
     color: #ff006e;
 } 
 
@@ -57,7 +51,6 @@ nav ul li a:hover{
     color: #ffbe0b;
 }
 
-/* RESPONSIVE MEDIA SCREEN */
 @media screen and (min-width:576px){
     nav ul {
         display: flex;
@@ -66,7 +59,7 @@ nav ul li a:hover{
         justify-content: space-between; /*when screen size is shrinked they will have space between them */
         }
 
-    nav ul li{
+    nav ul button{
         flex: 1 0 auto ;    /*1 means it will grow always 0 means it will not shrink */
 
     }

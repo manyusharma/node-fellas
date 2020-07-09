@@ -19,22 +19,59 @@
 
 <body>
 
-<!--Nav bar-->    
 
 <nav>
     <ul>
-        <li><a href="#" class="logo">Node Fellas <i class="fa fa-arrow-down"></i></a></li>
-        <li><a href="#" class="Home">Home</a></li>
-        <li><a href="#" class="Skills">Skills</a></li>
-        <li><a href="#" class="Services">Services</a></li>
-        <li><a href="#" class="Portfolio">Portfolio</a></li>
-        <li><a href="#" class="Contact us">Contact us</a></li>
-    
+      <a href="#" class="logo">Node Fellas <i class="fa fa-arrow-down"></i></a>
+      <button href="#" class="Home">Home</button>
+      <button href="#" class="Skills" id="btn">Skills</button>
+      <button href="#" class="Services" id="btn2">Services</button>
+      <button href="#" class="Portfolio" id="btn3">Portfolio</button>
+      <button href="#" class="Contact us" id="btn4">Contact us</button>
     </ul>
 </nav>
 
-<!--end of Nav bar-->
+<script>
+    function scrollWin(){
+      window.scrollBy({
+        top: 600,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+    document.getElementById("btn").addEventListener("click", scrollWin);
 
+    function scrollWin2(){
+      window.scrollBy({
+        top: 1090,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+    document.getElementById("btn2").addEventListener("click", scrollWin2);
+
+    function scrollWin3(){
+      window.scrollBy({
+        top: 1900,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+    document.getElementById("btn3").addEventListener("click", scrollWin3);
+
+    function scrollWin4(){
+      window.scrollBy({
+        top: 2400,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+    document.getElementById("btn4").addEventListener("click", scrollWin4);
+
+
+
+  
+  </script>
 
 <!--BANNER-->
 <header id="banner">
@@ -42,8 +79,8 @@
         <h1 class="banner-text">Node Fellas</h1>
         <div class="banner-underline"></div>
         <div class="banner-btn">
-            <button type="button">Hire us!</button>
-            <button type="button">About us</button>
+            <a href="mailto: sharmamanyu011@gmail.com"><button type="button">Hire us!</button></a>
+            <a href="https://www.linkedin.com/in/abhimanyu-sharma-31b913183/"><button type="button">About us</button></a>
         </div>
     </div>
 </header>
@@ -262,7 +299,7 @@
   <!--   filler section-->
   <section id="filler-contact">
     <h1>We Are Proffesionals</h1>
-    <button type="button">Contact Us</button>
+    <a href="https://www.linkedin.com/in/abhimanyu-sharma-31b913183/"><button type="button" id="btn">Contact Us</button></a>
   </section>
   <!--     end of filler section-->
 
@@ -274,9 +311,9 @@
       <h3>Copyright &copy; 2020. All rigths reserved</h3>
     </div>
     <div class="footer-icons">
-        <i class="fab fa-github"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-google-plus"></i>
+        <a href="https://github.com/manyusharma?tab=repositories"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/manyu.sharma/?hl=en"><i class="fab fa-instagram"></i></a>
+        <a href="mailto: sharmamanyu011@gmail.com"><i class="fab fa-google-plus"></i></a>
         
     </div>
 
